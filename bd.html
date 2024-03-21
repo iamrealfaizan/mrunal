@@ -21,7 +21,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: pink;
+  background-color: #FFB3C1;
 }
 
 .song {
@@ -59,7 +59,7 @@ body {
 }
 
 .four .text-box {
-  border: 3px solid #aaa;
+  border: 3px solid #000000;
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
@@ -77,10 +77,11 @@ body {
 }
 
 .text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
+  margin-top: 10%;
+  background-color: #FF4D6D;
   border-radius: 3px;
   bottom: -50px;
-  color: #fff;
+  color: #F6E9F8;
   padding: .5rem 1rem;
   position: absolute;
   right: 5px;
@@ -277,7 +278,7 @@ body {
   }
 
   .text-box .fake-btn {
-    bottom: -38px;
+    bottom: -50px;
     right: 5px;
   }
 
@@ -314,7 +315,7 @@ body {
 <body>
 
     <audio class="song" loop autoplay>
-        <source src="./music/hbd.mpeg">
+        <source src="./music/bd.mp3">
         </source>
         Your browser isn't invited for super fun audio time.
     </audio>
@@ -323,19 +324,19 @@ body {
         <div class="one">
             <h1 class="one">
                 Hi
-                <span id="name">Irene</span>
+                <span id="name">MRUNAL</span>
             </h1>
-            <p class="two" id="greetingText">I really like your name btw!</p>
+            <p class="two" id="greetingText">you know what???</p>
         </div>
 
         <div class="three">
-            <p>It's your birthday!! :D</p>
+            <p>It's your BIRTHDAY!! :D</p>
         </div>
 
         <div class="four">
             <div class="text-box">
                 <p class="hbd-chatbox">
-                Happy birthday to youu!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam amet ipsam vitae, voluptatum architecto aliquid id quo error tempora quos aperiam magni necessitatibus quas ut, possimus nesciunt nam ad.
+                  Happy Birthday to someone whose creativity knows no bounds! Your ability to turn ordinary moments into extraordinary memories is truly inspiring. Your kindness, compassion, and unwavering support mean the world to me. Here's to another year of laughter, friendship, and endless creativity. May your day be filled with joy, love, and beautiful moments that you'll cherish forever. Cheers to you, and may all your dreams and aspirations come true!
                 </p>
                 <p class="fake-btn">Send</p>
             </div>
@@ -458,8 +459,8 @@ window.addEventListener('load', () => {
         title: 'Do you want to play music in the background?',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#FF4D6D',
+        cancelButtonColor: '#FFB3C1',
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
     }).then((result) => {
@@ -556,7 +557,7 @@ const animationTimeline = () => {
         0.05
     )
     .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
+        backgroundColor: "#FF4D6D",
     },
     "+=4")
     .to(
@@ -575,8 +576,8 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
         x: 10,
-        backgroundColor: "rgb(21, 161, 237)",
-        color: "#fff",
+        backgroundColor: "#FF4D6D",
+        color: "#F6E9F8",
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
